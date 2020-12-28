@@ -11,7 +11,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-     <header>
+     <header id="myHeader">
        <div class="row">
          <div class="col-12">
         <nav class="navbar navbar-expand navbar--blue">
@@ -148,7 +148,7 @@
      </section>
      <!-- section 1 -->
      <!-- section 2 -->
-     <section class="section-container pt-2">
+     <section class="section-container pt-2 content">
       <div id="carouselExampleIndicators" class="carousel slide carousel--bottom bg-white" data-interval="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -188,6 +188,8 @@
         <div class="row category bg-white">
             <div class="col-6">
                 <h2 class="category__heading">Deals of the Day</h2>
+                <img class="ps-1" src="./images/timer_a73398.svg" alt="timer">
+                <p id="demo" style="display: inline-block;"></p>
             </div>
             <div class="col-6" style="text-align:right;">
                 <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
@@ -197,7 +199,7 @@
               <div class="carousel-inner">
               <div class="carousel-item active">
               <div class="row">
-                      <div class="card" style="width: 206px;">
+                      <div class="card">
                         <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Christmas Essentials</div>
@@ -206,7 +208,7 @@
                          
                         </div>
                     </div>
-                      <div class="card" style="width: 206px;">
+                      <div class="card">
                           <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                           <div class="card-body">
                             <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -215,7 +217,7 @@
                            
                           </div>
                       </div>
-                      <div class="card" style="width: 206px;">
+                      <div class="card">
                         <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                           <div class="card-body">
                             <div class="card__title">Home Furnishing Range</div>
@@ -224,7 +226,7 @@
                            
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Every Reason To Shop Now!!</div>
@@ -233,7 +235,7 @@
                            
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Men's Grooming</div>
@@ -241,7 +243,7 @@
                           <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Fragrances Best Sellers</div>
@@ -254,7 +256,7 @@
                             <!-- carousel item2 -->
            <div class="carousel-item">
               <div class="row">
-                      <div class="card" style="width: 206px;">
+                      <div class="card">
                         <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Christmas Essentials</div>
@@ -263,7 +265,7 @@
                          
                         </div>
                     </div>
-                      <div class="card" style="width: 206px;">
+                      <div class="card">
                           <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                           <div class="card-body">
                             <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -272,7 +274,7 @@
                            
                           </div>
                       </div>
-                      <div class="card" style="width: 206px;">
+                      <div class="card">
                         <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                           <div class="card-body">
                             <div class="card__title">Home Furnishing Range</div>
@@ -281,7 +283,7 @@
                            
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Every Reason To Shop Now!!</div>
@@ -290,7 +292,7 @@
                            
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Men's Grooming</div>
@@ -298,7 +300,7 @@
                           <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Fragrances Best Sellers</div>
@@ -319,17 +321,31 @@
 
       </section>
      <!-- section 3 -->
-    <!--  section 4 -->
+     <!--  section 4 -->
      <section class="section-container">
         <div class="row">
           <div class="col-4 banner">
-            <img class="img-fluid banner__image banner__image--align" src="./images/banner1.jpg" alt="banner1">
+             <img class="img-fluid banner__image banner__image--align" src="./images/banner1.jpg" alt="banner1">
+            <div class="banner-left">
+            <h5 class="">Top Deals On Washing Machines</h5>
+            <p>Upto ₹5,000 Off On Exchange</p>
+            <button type="button" class="btn btn-default bg-danger text-white banner__button">From ₹10,999 </button>
+          </div>
           </div>
           <div class="col-4 banner">
             <img class="img-fluid banner__image banner__image--align" src="./images/banner2.jpg" alt="banner2">
+            <div class="banner-center">
+              <h5 class="">Create Your On Space <br> With Flipkart Furnitures</h5>
+              <button type="button" class="btn btn-default bg-dark text-white banner__button">From ₹10,999 </button>
+            </div>
           </div>
           <div class="col-4 banner">
             <img class="img-fluid banner__image banner__image--align" src="./images/banner3.jpg" alt="banner3">
+            <div class="banner-right">
+              <h5 class="">Celebrating World Literacy Week</h5>
+              <p>Books Stationary And More</p>
+              <button type="button" class="btn btn-default bg-danger text-white banner__button">From ₹10,999 </button>
+            </div>
           </div>
         </div>
      </section>
@@ -348,7 +364,7 @@
             <div class="carousel-inner">
             <div class="carousel-item active">
             <div class="row">
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card7.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Christmas Essentials</div>
@@ -357,7 +373,7 @@
                        
                       </div>
                   </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                         <img src="./images/card8.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -366,7 +382,7 @@
                          
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card9.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Home Furnishing Range</div>
@@ -375,7 +391,7 @@
                          
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card10.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Every Reason To Shop Now!!</div>
@@ -384,7 +400,7 @@
                          
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card11.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Men's Grooming</div>
@@ -392,7 +408,7 @@
                         <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card12.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Fragrances Best Sellers</div>
@@ -405,7 +421,7 @@
                           <!-- carousel item2 -->
          <div class="carousel-item">
             <div class="row">
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Christmas Essentials</div>
@@ -414,7 +430,7 @@
                        
                       </div>
                   </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                         <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -423,7 +439,7 @@
                          
                         </div>
                     </div>
-                    <div class="card" style="width: 206px;">
+                    <div class="card">
                       <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                         <div class="card-body">
                           <div class="card__title">Home Furnishing Range</div>
@@ -432,7 +448,7 @@
                          
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Every Reason To Shop Now!!</div>
@@ -441,7 +457,7 @@
                          
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Men's Grooming</div>
@@ -449,7 +465,7 @@
                         <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Fragrances Best Sellers</div>
@@ -467,26 +483,40 @@
         <i class="fas fa-chevron-right"></i>
         </a>
       </div>
-    </section>
+     </section>
      <!-- section 5 -->
      <!-- section 6 -->
      <section class="section-container">
       <div class="row">
         <div class="col-4 banner">
-          <img class="img-fluid banner__image banner__image--align" src="./images/banner1.jpg" alt="banner1">
+           <img class="img-fluid banner__image banner__image--align" src="./images/banner1.jpg" alt="banner1">
+          <div class="banner-left">
+          <h5 class="">Top Deals On Washing Machines</h5>
+          <p>Upto ₹5,000 Off On Exchange</p>
+          <button type="button" class="btn btn-default bg-danger text-white banner__button">From ₹10,999 </button>
+        </div>
         </div>
         <div class="col-4 banner">
           <img class="img-fluid banner__image banner__image--align" src="./images/banner2.jpg" alt="banner2">
+          <div class="banner-center">
+            <h5 class="">Create Your On Space <br> With Flipkart Furnitures</h5>
+            <button type="button" class="btn btn-default bg-dark text-white banner__button">From ₹10,999 </button>
+          </div>
         </div>
         <div class="col-4 banner">
           <img class="img-fluid banner__image banner__image--align" src="./images/banner3.jpg" alt="banner3">
+          <div class="banner-right">
+            <h5 class="">Celebrating World Literacy Week</h5>
+            <p>Books Stationary And More</p>
+            <button type="button" class="btn btn-default bg-danger text-white banner__button">From ₹10,999 </button>
+          </div>
         </div>
       </div>
    </section>
-   <!-- section 6 -->
-   <!-- section 7 -->
-   <section class="pt-2 section-container">
-    <div class="row category category--height bg-white">
+     <!-- section 6 -->
+     <!-- section 7 -->
+     <section class="pt-2 section-container">
+     <div class="row category category--height bg-white">
         <div class="col-6">
             <h2 class="category__heading">Furniture Bestsellers</h2>
             <h3 class="card__text card__text--top">From ₹199</h3>
@@ -494,12 +524,12 @@
         <div class="col-6" style="text-align:right;">
             <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
         </div>
-    </div>
+     </div>
         <div id="carouselExampleIndicators4" class="carousel slide carousel--bottom bg-white" data-interval="false">
           <div class="carousel-inner">
           <div class="carousel-item active">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card13.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -508,7 +538,7 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card14.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -517,7 +547,7 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card15.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -526,7 +556,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card16.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -535,7 +565,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card17.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -543,7 +573,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card18.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -556,7 +586,7 @@
                         <!-- carousel item2 -->
        <div class="carousel-item">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -565,7 +595,7 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -574,7 +604,7 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -583,7 +613,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -592,7 +622,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -600,7 +630,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -624,144 +654,7 @@
    <section class="pt-2 section-container">
     <div class="row category category--height bg-white">
         <div class="col-6">
-            <h2 class="category__heading">Deals of the Day</h2>
-            <h3 class="card__text card__text--top">From ₹199</h3>
-        </div>
-        <div class="col-6" style="text-align:right;">
-            <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
-        </div>
-    </div>
-        <div id="carouselExampleIndicators4" class="carousel slide carousel--bottom bg-white" data-interval="false">
-          <div class="carousel-inner">
-          <div class="carousel-item active">
-          <div class="row">
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Christmas Essentials</div>
-                      <p class="card__text card__text--color">From ₹99</p>
-                      <p class="card__text">Christmas Tree &amp; more</p>
-                     
-                    </div>
-                </div>
-                  <div class="card" style="width: 206px;">
-                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
-                      <div class="card-body">
-                        <div class="card__title">Sports &amp; Fitness Accessories</div>
-                        <p class="card__text card__text--color">Upto 80% Off</p>
-                        <p class="card__text">Badminton, Dumbbells & more</p>
-                       
-                      </div>
-                  </div>
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                      <div class="card-body">
-                        <div class="card__title">Home Furnishing Range</div>
-                      <p class="card__text card__text--color">From ₹129</p>
-                      <p class="card__text">Bedsheets & more</p>
-                       
-                    </div>
-                </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Every Reason To Shop Now!!</div>
-                      <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
-                      <p class="card__text">Bestsellers@Lowest Prices</p>
-                       
-                    </div>
-                </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Men's Grooming</div>
-                      <p class="card__text card__text--color">Extra 5% Off</p>
-                      <p class="card__text">Garnier, Nivea Men, Beardo..</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Fragrances Best Sellers</div>
-                      <p class="card__text card__text--color">Extra 5% Off</p>
-                      <p class="card__text">Denver, Fogg & More</p>
-                  </div>
-                </div>
-           </div>
-         </div>
-                        <!-- carousel item2 -->
-       <div class="carousel-item">
-          <div class="row">
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Christmas Essentials</div>
-                      <p class="card__text card__text--color">From ₹99</p>
-                      <p class="card__text">Christmas Tree &amp; more</p>
-                     
-                    </div>
-                </div>
-                  <div class="card" style="width: 206px;">
-                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
-                      <div class="card-body">
-                        <div class="card__title">Sports &amp; Fitness Accessories</div>
-                        <p class="card__text card__text--color">Upto 80% Off</p>
-                        <p class="card__text">Badminton, Dumbbells & more</p>
-                       
-                      </div>
-                  </div>
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                      <div class="card-body">
-                        <div class="card__title">Home Furnishing Range</div>
-                      <p class="card__text card__text--color">From ₹129</p>
-                      <p class="card__text">Bedsheets & more</p>
-                       
-                    </div>
-                </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Every Reason To Shop Now!!</div>
-                      <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
-                      <p class="card__text">Bestsellers@Lowest Prices</p>
-                       
-                    </div>
-                </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Men's Grooming</div>
-                      <p class="card__text card__text--color">Extra 5% Off</p>
-                      <p class="card__text">Garnier, Nivea Men, Beardo..</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
-                    <div class="card-body">
-                      <div class="card__title">Fragrances Best Sellers</div>
-                      <p class="card__text card__text--color">Extra 5% Off</p>
-                      <p class="card__text">Denver, Fogg & More</p>
-                  </div>
-                </div>
-           </div>
-        </div>
-      
-      <a class="carousel-control-prev carousel-button d-none" href="#carouselExampleIndicators4" role="button" data-bs-slide="prev">
-      <i class="fas fa-chevron-left"></i>
-      </a>
-      <a class="carousel-control-next carousel-button" href="#carouselExampleIndicators4" role="button" data-bs-slide="next">
-      <i class="fas fa-chevron-right"></i>
-      </a>
-    </div>
-  </section>
-
-   <!-- section 8 -->
-   <!-- section 9 -->
-   <section class="pt-2 section-container">
-    <div class="row category category--height bg-white">
-        <div class="col-6">
-            <h2 class="category__heading">Deals of the Day</h2>
+            <h2 class="category__heading">Trending Offers</h2>
             <h3 class="card__text card__text--top">From ₹199</h3>
         </div>
         <div class="col-6" style="text-align:right;">
@@ -772,8 +665,8 @@
           <div class="carousel-inner">
           <div class="carousel-item active">
           <div class="row">
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                    <img src="./images/card25.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
                       <p class="card__text card__text--color">From ₹99</p>
@@ -781,8 +674,8 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
-                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                      <img src="./images/card26.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
                         <p class="card__text card__text--color">Upto 80% Off</p>
@@ -790,8 +683,8 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                    <img src="./images/card27.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
                       <p class="card__text card__text--color">From ₹129</p>
@@ -799,25 +692,24 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card28.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
                       <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
                       <p class="card__text">Bestsellers@Lowest Prices</p>
-                       
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card29.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card30.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
@@ -829,7 +721,7 @@
                         <!-- carousel item2 -->
        <div class="carousel-item">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -838,7 +730,7 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -847,7 +739,7 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -856,7 +748,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -865,7 +757,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -873,7 +765,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -892,13 +784,14 @@
       </a>
     </div>
   </section>
+
+   <!-- section 8 -->
    <!-- section 9 -->
-   <!-- section 10 -->
    <section class="pt-2 section-container">
-    <div class="row category bg-white">
+    <div class="row category category--height bg-white">
         <div class="col-6">
-            <h2 class="category__heading">Best of Appliances</h2>
-            
+            <h2 class="category__heading">Deals of the Day</h2>
+            <h3 class="card__text card__text--top">From ₹199</h3>
         </div>
         <div class="col-6" style="text-align:right;">
             <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
@@ -908,8 +801,8 @@
           <div class="carousel-inner">
           <div class="carousel-item active">
           <div class="row">
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card19.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
                       <p class="card__text card__text--color">From ₹99</p>
@@ -917,8 +810,8 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
-                      <img src="./images/card20.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
                         <p class="card__text card__text--color">Upto 80% Off</p>
@@ -926,8 +819,8 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card21.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                    <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
                       <p class="card__text card__text--color">From ₹129</p>
@@ -935,8 +828,8 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card22.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
                       <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
@@ -944,16 +837,16 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card23.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card24.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
@@ -965,7 +858,7 @@
                         <!-- carousel item2 -->
        <div class="carousel-item">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -974,7 +867,7 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -983,7 +876,7 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -992,7 +885,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -1001,7 +894,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -1009,7 +902,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -1028,13 +921,13 @@
       </a>
     </div>
   </section>
+   <!-- section 9 -->
    <!-- section 10 -->
-   <!-- section 11 -->
    <section class="pt-2 section-container">
-    <div class="row category category--height bg-white">
+    <div class="row category bg-white">
         <div class="col-6">
-            <h2 class="category__heading">Deals of the Day</h2>
-            <h3 class="card__text card__text--top">From ₹199</h3>
+            <h2 class="category__heading">Best of Appliances</h2>
+            
         </div>
         <div class="col-6" style="text-align:right;">
             <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
@@ -1044,8 +937,8 @@
           <div class="carousel-inner">
           <div class="carousel-item active">
           <div class="row">
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                    <img src="./images/card19.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
                       <p class="card__text card__text--color">From ₹99</p>
@@ -1053,8 +946,8 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
-                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                      <img src="./images/card20.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
                         <p class="card__text card__text--color">Upto 80% Off</p>
@@ -1062,8 +955,8 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                    <img src="./images/card21.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
                       <p class="card__text card__text--color">From ₹129</p>
@@ -1071,8 +964,8 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card22.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
                       <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
@@ -1080,16 +973,16 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card23.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card24.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
@@ -1101,7 +994,7 @@
                         <!-- carousel item2 -->
        <div class="carousel-item">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -1110,7 +1003,7 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -1119,7 +1012,7 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -1128,7 +1021,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -1137,7 +1030,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -1145,7 +1038,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -1164,12 +1057,13 @@
       </a>
     </div>
   </section>
+   <!-- section 10 -->
    <!-- section 11 -->
-   <!-- section 12 -->
    <section class="pt-2 section-container">
-    <div class="row category bg-white">
+    <div class="row category category--height bg-white">
         <div class="col-6">
             <h2 class="category__heading">Deals of the Day</h2>
+            <h3 class="card__text card__text--top">From ₹199</h3>
         </div>
         <div class="col-6" style="text-align:right;">
             <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
@@ -1179,7 +1073,7 @@
           <div class="carousel-inner">
           <div class="carousel-item active">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -1188,7 +1082,7 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -1197,7 +1091,7 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -1206,7 +1100,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -1215,7 +1109,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -1223,7 +1117,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -1236,7 +1130,7 @@
                         <!-- carousel item2 -->
        <div class="carousel-item">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -1245,7 +1139,7 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
@@ -1254,7 +1148,7 @@
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -1263,7 +1157,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -1272,7 +1166,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -1280,7 +1174,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -1299,8 +1193,8 @@
       </a>
     </div>
   </section>
+   <!-- section 11 -->
    <!-- section 12 -->
-   <!-- section 13-->
    <section class="pt-2 section-container">
     <div class="row category bg-white">
         <div class="col-6">
@@ -1314,8 +1208,8 @@
           <div class="carousel-inner">
           <div class="carousel-item active">
           <div class="row">
-                  <div class="card" style="width: 206px;">
-                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                    <img src="./images/card13.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
                       <p class="card__text card__text--color">From ₹99</p>
@@ -1323,16 +1217,16 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
-                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
+                  <div class="card">
+                      <img src="./images/card14.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
-                        <p class="card__text card__text--color">Upto 80% Off</p>
+                        <p class="card__text card__text--color">Upto 90% Off</p>
                         <p class="card__text">Badminton, Dumbbells & more</p>
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -1341,8 +1235,8 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card15.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
                       <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
@@ -1350,16 +1244,16 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card16.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
-                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                <div class="card">
+                  <img src="./images/card17.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
                       <p class="card__text card__text--color">Extra 5% Off</p>
@@ -1371,7 +1265,7 @@
                         <!-- carousel item2 -->
        <div class="carousel-item">
           <div class="row">
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Christmas Essentials</div>
@@ -1380,16 +1274,16 @@
                      
                     </div>
                 </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                       <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Sports &amp; Fitness Accessories</div>
-                        <p class="card__text card__text--color">Upto 80% Off</p>
+                        <p class="card__text card__text--color">Upto 90% Off</p>
                         <p class="card__text">Badminton, Dumbbells & more</p>
                        
                       </div>
                   </div>
-                  <div class="card" style="width: 206px;">
+                  <div class="card">
                     <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
                       <div class="card-body">
                         <div class="card__title">Home Furnishing Range</div>
@@ -1398,7 +1292,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Every Reason To Shop Now!!</div>
@@ -1407,7 +1301,7 @@
                        
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Men's Grooming</div>
@@ -1415,7 +1309,7 @@
                       <p class="card__text">Garnier, Nivea Men, Beardo..</p>
                     </div>
                 </div>
-                <div class="card" style="width: 206px;">
+                <div class="card">
                   <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
                     <div class="card-body">
                       <div class="card__title">Fragrances Best Sellers</div>
@@ -1434,75 +1328,425 @@
       </a>
     </div>
   </section>
+   <!-- section 12 -->
    <!-- section 13-->
-   <!-- JavaScript Bundle with Popper -->
+   <section class="pt-2 section-container">
+    <div class="row category bg-white">
+        <div class="col-6">
+            <h2 class="category__heading">Deals of the Day</h2>
+        </div>
+        <div class="col-6" style="text-align:right;">
+            <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
+        </div>
+    </div>
+        <div id="carouselExampleIndicators10" class="carousel slide carousel--bottom bg-white" data-interval="false">
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+          <div class="row">
+                  <div class="card">
+                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Christmas Essentials</div>
+                      <p class="card__text card__text--color">From ₹99</p>
+                      <p class="card__text">Christmas Tree &amp; more</p>
+                     
+                    </div>
+                </div>
+                  <div class="card">
+                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
+                      <div class="card-body">
+                        <div class="card__title">Sports &amp; Fitness Accessories</div>
+                        <p class="card__text card__text--color">Upto 80% Off</p>
+                        <p class="card__text">Badminton, Dumbbells & more</p>
+                       
+                      </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                      <div class="card-body">
+                        <div class="card__title">Home Furnishing Range</div>
+                      <p class="card__text card__text--color">From ₹129</p>
+                      <p class="card__text">Bedsheets & more</p>
+                       
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Every Reason To Shop Now!!</div>
+                      <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
+                      <p class="card__text">Bestsellers@Lowest Prices</p>
+                       
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Men's Grooming</div>
+                      <p class="card__text card__text--color">Extra 5% Off</p>
+                      <p class="card__text">Garnier, Nivea Men, Beardo..</p>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Fragrances Best Sellers</div>
+                      <p class="card__text card__text--color">Extra 5% Off</p>
+                      <p class="card__text">Denver, Fogg & More</p>
+                  </div>
+                </div>
+           </div>
+         </div>
+                        <!-- carousel item2 -->
+       <div class="carousel-item">
+          <div class="row">
+                  <div class="card">
+                    <img src="./images/card1.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Christmas Essentials</div>
+                      <p class="card__text card__text--color">From ₹99</p>
+                      <p class="card__text">Christmas Tree &amp; more</p>
+                     
+                    </div>
+                </div>
+                  <div class="card">
+                      <img src="./images/card2.jpg" class="card-img-top img-fluid card__image" alt="...">
+                      <div class="card-body">
+                        <div class="card__title">Sports &amp; Fitness Accessories</div>
+                        <p class="card__text card__text--color">Upto 80% Off</p>
+                        <p class="card__text">Badminton, Dumbbells & more</p>
+                       
+                      </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/card3.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                      <div class="card-body">
+                        <div class="card__title">Home Furnishing Range</div>
+                      <p class="card__text card__text--color">From ₹129</p>
+                      <p class="card__text">Bedsheets & more</p>
+                       
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card4.png" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Every Reason To Shop Now!!</div>
+                      <p class="card__text card__text--color">From₹99+Extra Upto20%</p>
+                      <p class="card__text">Bestsellers@Lowest Prices</p>
+                       
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card5.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Men's Grooming</div>
+                      <p class="card__text card__text--color">Extra 5% Off</p>
+                      <p class="card__text">Garnier, Nivea Men, Beardo..</p>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card6.jpeg" class="card-img-top img-fluid card__image" alt="...">
+                    <div class="card-body">
+                      <div class="card__title">Fragrances Best Sellers</div>
+                      <p class="card__text card__text--color">Extra 5% Off</p>
+                      <p class="card__text">Denver, Fogg & More</p>
+                  </div>
+                </div>
+           </div>
+        </div>
+      
+      <a class="carousel-control-prev carousel-button d-none" href="#carouselExampleIndicators10" role="button" data-bs-slide="prev">
+      <i class="fas fa-chevron-left"></i>
+      </a>
+      <a class="carousel-control-next carousel-button" href="#carouselExampleIndicators10" role="button" data-bs-slide="next">
+      <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+  </section>
+   <!-- section 13-->
+   <!-- section 14-->
+   <section class="pt-5">
+     <div class="row  bg-white pt-2">
+       <div class="col-12 article article--color">
+        <h1 class="article__heading">Flipkart: The One-stop Shopping Destination</h1>
+        <span class="article__text"> E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest
+        phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, 
+        from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing
+        and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like 
+        washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers,
+        mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here.
+        For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+        <br>
+        <br>
+        What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are 
+        wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.</span>
+        <br>
+        <br>
+        <h2 class="article__heading">Flipkart: The One-stop Shopping Destination</h2>
+        <span class="article__text">A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. 
+          All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members earn 2 supercoins. Free delivery, 
+          early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! 
+        <br>
+        <br>
+        What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+        <br>
+        An annual Zomato Gold membership
+        <br>
+        An annual Hotstar Premium membership
+        <br>
+        6 months Gaana plus subscription
+        <br>
+        Rupees 550 instant discount on flights on ixigo
+        <br>
+        Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
+        <br>
+        <br>
+      </span>
+      <h2 class="article__heading">No Cost EMI</h2>
+      <span class="article__text">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee.
+         Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time,
+        chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</span>
+        <br>
+        <br>
+        <h2 class="article__heading">EMI on Debit Cards</h2>
+        <span class="article__text">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards,
+           in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses
+            in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. 
+        </span>
+        <br>
+        <br>
+        <h2 class="article__heading">Mobile Exchange Offers</h2>
+        <span class="article__text">Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone,
+           provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. 
+           So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. </span>
+           <br>
+           <br>
+           <h2 class="article__heading">What Can You Buy From Flipkart?</h2>
+           <h2 class="article__heading">Mobile Phones</h2>
+           <span class="article__text">From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, 
+             beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few.
+              Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails
+               you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - 
+               <b>the Flipkart Complete Mobile Protection</b> covers a comprehensive range of post-purchase problems, with door-to-door services. 
+            </span>
+            <br>
+            <br>
+           <h2 class="article__heading">Electronic Devices and Accessories</h2>
+           <span class="article__text">When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash.
+            All you students out there, confused about what laptop to get? <b> Our Back To College Store </b> segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands 
+            and industry experts, facilitating a shopping experience that is quicker and simpler.
+            <br>
+            <br>
+            Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much
+             for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, 
+             millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
+             <br>
+             <br>
+             Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+            <br>
+            <br>
+            How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; 
+            never again worry about running out of charge or memory on your next vacation.
+            </span>
+            <br>
+            <br>
+            <h2 class="article__heading">Large Appliances</h2>
+            <span class="article__text">
+              Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; 
+              delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool,
+               Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.
+            </span>
+            <br>
+            <br>
+            <h2 class="article__heading">Small Home Appliances</h2>
+            <span class="article__text">Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. 
+            Live life king size with these appliances at home.</span>
+            <br>
+            <br>
+            <h2 class="article__heading">Lifestyle</h2>
+            <span class="article__text">Flipkart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery,
+               long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense 
+               cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, 
+               office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.
+            </span>
+            <br>
+            <br>
+            <h2 class="article__heading">Home and Furniture</h2>
+            <span class="article__text">Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, 
+            what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you
+            for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.
+            <br>
+            <br>
+            You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart.</span>
+            <br>
+            <br>
+            <h2 class="article__heading">Baby and Kids</h2>
+            <span class="article__text">Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort,
+            you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business for your baby.</span>
+            <br>
+            <br>
+            <h2 class="article__heading">Books, Sports and Games</h2>
+            <span class="article__text">Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.</span>
+            <br>
+            <br>
+            <h2 class="article__heading">Grocery/Supermart</h2>
+            <span class="article__text">Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything 
+              you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.</span>
+       </div>
+     </div>
+   </section>
+   <!-- section 14-->
+   <!-- footer -->
+   <footer>
+    <div class="row footer-row">
+      
+    </div>
+   </footer>
+   <!-- footer -->
    <!-- JavaScript Bundle with Popper -->
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/fa595a4e66.js" crossorigin="anonymous"></script>
+   <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
 
+    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+      var x = setInterval(function() {
+
+        var now = new Date().getTime();
+          
+        
+        var distance = countDownDate - now;
+          
+       
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+          
+       
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
     </body>
 </html>
 
 
 
- <!--  <div class="row category bg-white section-container">
-        <div class="col-6">
-        <h2 class="category__heading">Deals of the Day</h2>
-      </div>
-        <div class="col-6" style="text-align:right;">
-        <button type="button" class="btn btn-primary category__button text-center">VIEW ALL </button>
-        </div>
-      </div>
-      <div class="row section-container">
-        <div class="card" style="width: 206px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 206px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 206px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 206px ;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 206px ;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 206px ;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div> -->
-      
 
+<!-- <section class="section-container">
+  <div class="row">
+
+
+  </div>
+  <div class="row overview">
+      <span class="products__heading">MOST SEARCHED FOR ON FLIPKART:</span>
+             <a class="products" href="">Flipkart</a>
+             <a class="products" href=""> Super CoinFlipkart</a> 
+             <a class="products" href="">COVID-19 Insurance</a> 
+             <a class="products" href=""> Flipkart Help Centre</a> 
+             <a class="products" href="">Flipkart Track Orders</a>
+             <a class="products" href="">Flipkart Manage Orders</a>
+             <a class="products" href="">Flipkart Return Orders</a> 
+             <a class="products" href="">Flipkart Gift Cards Store </a> 
+             <a class="products" href="">MAX Fashion Store</a> 
+             <a class="products" href="">Fake or Not Show</a>    
+             <a class="products" href="">Snapchat Spectacles</a>    
+             <a class="products" href="">Sarees</a>    
+             <a class="products" href="">Flipkart Axis Bank Credit Card</a>    
+             <a class="products" href="">Hand Sanitizer</a>    
+             <a class="products" href="">Realme BandHuawei gt 2e Smart Watch</a>    
+             <a class="products" href="">5G MobilesFlipkart Videos</a>
+             <a class="products" href="">Flipkart Pay Later</a>    
+             <a class="products" href="">iQOOO 3VaporizerNebulizers</a>    
+             <a class="products" href="">Hand Wash</a>  
+             <a class="products" href="">Realme Watch S</a>    
+             <a class="products" href="">Realme Watch S Pro</a>    
+             <a class="products" href="">Pollution Masks</a>
+             <a class="products" href="">Huawei Band 4</a>    
+             <a class="products" href="">Realme 5i</a>    
+             <a class="products" href="">Realme Buds Air</a> 
+             <a class="products" href="">Nokia 55 Inch TV</a>    
+             <a class="products" href="">Realme X2 PRO</a>    
+             <a class="products" href="">fit Pro 2 Smartwatch</a>
+             <a class="products" href="">Unicorn Toys</a>       
+             <a class="products" href="">Nokia Pure Book</a>
+             <a class="products" href="">Redmi 8</a>
+             <a class="products" href="">Honor 20i</a>       
+             <a class="products" href="">OPPO K1</a>  
+             <a class="products" href="">Realme 5</a>
+             <a class="products" href="">Realme 5 Pro</a>       
+             <a class="products" href="">Nokia Pure Book Laptop Store</a>  
+             <a class="products" href="">Flipkart Axis Bank Credit Card</a>
+             <a class="products" href="">Redmi K20</a>       
+             <a class="products" href="">Redmi K20 Pro</a> 
+             <a class="products" href="">Realme Watch S Store</a>       
+             <a class="products" href="">Realme Watch S Pro Store</a>
+             <a class="products" href="">Realme 3i</a>
+             <a class="products" href="">Realme Watch S Pro</a>    
+             <a class="products" href="">Pollution Masks</a>
+             <a class="products" href="">Huawei Band 4</a>    
+             <a class="products" href="">Realme 5i</a>    
+             <a class="products" href="">Realme Buds Air</a> 
+             <a class="products" href="">Nokia 55 Inch TV</a>    
+             <a class="products" href="">Realme X2 PRO</a>    
+             <a class="products" href="">fit Pro 2 Smartwatch</a>
+             <a class="products" href="">Unicorn Toys</a>       
+             <a class="products" href="">Nokia Pure Book</a>
+             <a class="products" href="">Redmi 8</a>
+             <a class="products" href="">Honor 20i</a>       
+             <a class="products" href="">OPPO K1</a>  
+             <a class="products" href="">Realme 5</a>
+             <a class="products" href="">Realme 5 Pro</a>       
+             <a class="products" href="">Nokia Pure Book Laptop Store</a>  
+             <a class="products" href="">Flipkart Axis Bank Credit Card</a>
+             <a class="products" href="">Redmi K20</a>       
+             <a class="products" href="">Redmi K20 Pro</a> 
+             <a class="products" href="">Realme Watch S Store</a>       
+             <a class="products" href="">Realme Watch S Pro Store</a>
+             <a class="products" href="">Realme 3i</a> 
+             <a class="products" href="">Realme Watch S Pro Store</a>
+             <a class="products" href="">Realme 3i</a>
+             <a class="products" href="">Realme Watch S Pro</a>    
+             <a class="products" href="">Pollution Masks</a>
+             <a class="products" href="">Huawei Band 4</a>    
+             <a class="products" href="">Realme 5i</a>    
+             <a class="products" href="">Realme Buds Air</a> 
+             <a class="products" href="">Nokia 55 Inch TV</a>    
+             <a class="products" href="">Realme X2 PRO</a>    
+             <a class="products" href="">fit Pro 2 Smartwatch</a>
+             <a class="products" href="">Unicorn Toys</a>       
+             <a class="products" href="">Nokia Pure Book</a>
+             <a class="products" href="">Redmi 8</a>
+             <a class="products" href="">Honor 20i</a>       
+             <a class="products" href="">OPPO K1</a>  
+             <a class="products" href="">Realme 5</a>
+             <a class="products" href="">Realme 5 Pro</a>       
+             <a class="products" href="">Nokia Pure Book Laptop Store</a>  
+             <a class="products" href="">Flipkart Axis Bank Credit Card</a>
+             <a class="products" href="">Redmi K20</a>       
+             <a class="products" href="">Redmi K20 Pro</a> 
+             <a class="products" href="">Realme Watch S Store</a>       
+             <a class="products" href="">Realme Watch S Pro Store</a>
+             <a class="products" href="">Realme 3i</a>
+      </div>
+     
+</section> -->
