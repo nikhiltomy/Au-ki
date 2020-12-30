@@ -1,0 +1,240 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family:Roboto,Arial, sans-serif;
+    width: -webkit-fill-available;
+    background-color: rgb(241, 243, 246);
+}
+a{
+    text-decoration: none;
+}
+header{
+  z-index: 1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.fk-header{
+    height:102px;
+    line-height: 19.6px;
+    width:100%;
+
+}
+.fk-header--blue{
+    background-color:rgb(40, 116, 240);
+}
+.fk-header__mainlogo{
+    width: 85px;
+}
+.fk-header__button{
+    padding-left: 0;
+    border: none;
+}
+.fk-header__icon{
+    font-size: 15px;
+}
+.fk-header__search-icon {
+  border-radius: 0px;
+  font-size: 13px;
+  color: gray;
+  border: none;
+  padding-left: 0px;
+  font-weight: 400;
+}
+.input-group-text {
+  border: none;
+  height: 40px;
+  border-radius: 0px;
+}
+.fk-search{
+  color: gray;
+  background-color: white
+}
+
+
+/* ============================================ */
+
+/* section1 */
+.fk-list{
+    width: 70px;
+    height: 62px;
+}
+/* section1 */
+/* section3 */
+.fk-category{
+    width: 110px;
+}
+/* section3 */
+/* section4 */
+.fk-organism-tablecollection {
+    background-color: rgb(153, 227, 242);
+    height: 476px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .fk-molc-text {
+    width: 375px;
+    height: 83px;
+    margin: 0px;
+    padding: 14px 8px 4px 8px;
+    display: inline;
+  }
+  .fk-atom-h2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+  }
+  .fk-atom-btn {
+    height: 34px;
+    width: 71px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    display: inline;
+  }
+  .fk-molc-cards {
+    margin: 9.5px;
+    margin-right: 9.5px;
+    margin-top: 10px;
+    height: 402px;
+    background-color: white;
+  }
+  .fk-card {
+    padding: 0px;
+    height: 187px;
+    width: 174px;
+  }
+  .fk-card--body {
+    padding: 16px 16px 12px 16px;
+    border: none;
+    border-radius: 0px;
+  }
+  .fk-card-atom-img {
+    height: 120px;
+    width: 92px;
+    margin-left: 27px;
+  }
+  .fk-card-atom-caption {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .fk-card-atom-caption--green {
+    font-size: 14px;
+    color: rgb(56, 142, 60);
+  }
+  .fk-hr {
+    height: "1px";
+    color: #c7bfbf;
+    margin-top: 15px;
+  }
+
+.fk-molc-table{
+    display: table;
+    border-color: rgb(128, 128,128);
+    font-size: 12px;
+    margin-left: 8.5px;
+    margin-right: 9.5px;
+    width: 356px;
+}
+.fk-tablerow{
+    border-color: rgb(128, 128,128);
+    border-bottom-left-radius: 2px ;
+    border-bottom-right-radius: 2px ;
+    border-top-left-radius: 2px ;
+    border-top-right-radius: 2px ;
+}
+.fk-tablecol{
+    border: 1px solid rgb(232,232,232);
+    vertical-align :middle;
+    width: 178px;
+    height: 202px;
+    border-bottom-left-radius: 2px ;
+    border-bottom-right-radius: 2px ;
+    border-top-left-radius: 2px ;
+    border-top-right-radius: 2px ;
+}
+
+/* section4 */
+/* section5 */
+.fk-banner{
+  height: 65px;
+  padding: 18px;
+  padding-left: 25px;
+}
+.fk-banner__heading{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.fk-banner__description{
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(135, 135, 135);
+  line-height: 16px;
+}
+
+/* section5 */
+/* section6 */
+.login{
+  height:120px;
+}
+.login__text{
+ font-size: 16px;
+ line-height: 24px;
+ margin-bottom: 7px;
+}
+.login__button{
+  width: 95px;
+  height: 35px;
+  border-radius: 0%;
+  line-height: 1.4;
+  font-size: 13px;
+  font-weight: 500;
+}
+.login__button--orange{
+  background-color: rgb(251, 100, 27);
+}
+/* section6 */
+.article{
+  display: block;
+  font-size:14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 1265px;
+}
+.article__heading{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-block-end: 10px;
+  margin-bottom: 10px;
+}
+.article__text{
+  font-size: 11px;
+}
+.article--color{
+  color: rgb(135,135,135);
+}
+
+.fk-last {
+  height: 50px;
+  background-color: white;
+  margin-top: 10px;
+}
+.fk-last--p {
+  display: inline-block;
+  width: 70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 17px;
+  padding-left: 14px;
+}
+.fk-button2 {
+  border: none;
+  display: inline-block;
+}
