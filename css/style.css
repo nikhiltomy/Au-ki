@@ -5,6 +5,10 @@ html,body{
     width: auto;
     background-color: rgb(241, 243, 246);
 }
+/* .asd{
+    margin-left: 0px;
+    margin-right:12px;
+} */
 a{
     text-decoration: none;
 }
@@ -59,7 +63,7 @@ width: 1025px;
 /* section1 */
 .section-container{
     margin-left: 8.5px;
-    margin-right: 1.5px;
+    margin-right: 8.5px;
 }
 .dropdown-list{
     align-items: center;
@@ -114,6 +118,7 @@ width: 1025px;
       letter-spacing: 0;
       line-height: 1.4;
       margin-left: 0px;
+      margin-right: 1px;
   }
   .category__heading{
     font-size: 22px;
@@ -136,8 +141,7 @@ width: 1025px;
       border: none;
   }
   .card__image{
-    height: 150px;
-    width: 170px;
+    width: 150px;
     padding-top: 25px;
   }
   .card__title{
@@ -266,6 +270,7 @@ width: 1025px;
     footer{
         background-color: #172337;
         height: 332px;
+      
     }
     .footer-row{
         display: flex;
@@ -314,12 +319,12 @@ width: 1025px;
         padding-left: 25px;
     }
     .list--width2{
-        width: 16em;
+        width: 11em;
         padding-left: 25px;
     }
     .footer-bottom{
         border-top: 1px solid #454d5e;
-        padding: 25px 85px;
+        padding: 25px 75px;
         margin-top: 40px;
         width: 100%;
     }
@@ -331,6 +336,10 @@ width: 1025px;
         color: white;
     }
     /* footer */
+    .header-container2{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 @media only screen and (max-width: 1000px) {
      html,body{
         width: max-content;

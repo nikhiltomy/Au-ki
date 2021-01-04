@@ -139,7 +139,7 @@
           <button class="btn btn-primary fk-atom-btn">View All</button>
         </div>
       </div>
-      <table class="fk-molc-table">
+      <table class="fk-molc-table fk-molc-table__margin">
         <tr class="fk-tablerow bg-white">
           <td class="fk-tablecol">
             <div class="col-6 fk-card">
@@ -233,7 +233,7 @@
           <button class="btn btn-primary fk-atom-btn">View All</button>
         </div>
       </div>
-      <table class="fk-molc-table">
+      <table class="fk-molc-table fk-molc-table__margin">
         <tr class="fk-tablerow bg-white">
           <td class="fk-tablecol">
             <div class="col-6 fk-card">
@@ -356,7 +356,7 @@
           <button class="btn btn-primary fk-atom-btn">View All</button>
         </div>
       </div>
-      <table class="fk-molc-table">
+      <table class="fk-molc-table fk-molc-table__margin">
         <tr class="fk-tablerow bg-white">
           <td class="fk-tablecol">
             <div class="col-6 fk-card">
@@ -421,10 +421,20 @@
     </div>
   </section>
   <!------- Section10------->
-  <section>
+  <section class="pt-4">
+    <div class="container-fluid">
+    <div class="row pt-3 bg-white">
+      <div class="col-10 ">
+        <span class="fk-last">Flipkart - Your go-to place for Online</span> 
+      </div>
+      <div class="col-2">
+          <button value="Show Div" onclick="showDiv()"><i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+  </div>
   </section>
-  <footer>
-    <section class="pt-4">
+  <footer id="welcomeDiv"  style="display:none;">
+    <section class="pt-2">
       <div class="container">
         <div class="row  bg-white pt-5">
           <div class="col-12 article article--color">
@@ -692,6 +702,9 @@
       }
     }
 
+   function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
   </script>
 </body>
 
