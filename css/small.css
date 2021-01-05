@@ -43,11 +43,14 @@ header{
   border: none;
   padding-left: 0px;
   font-weight: 400;
+  border-radius: 3px;
 }
 .input-group-text {
   border: none;
   height: 40px;
   border-radius: 0px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
 }
 .fk-search{
   color: gray;
@@ -72,7 +75,7 @@ header{
 .fk-organism-tablecollection {
     background-color: rgb(153, 227, 242);
     height: 476px;
-    width: 100%;
+    width: 101%;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -96,6 +99,7 @@ header{
     font-weight: 500;
     line-height: 14px;
     display: inline;
+    border-radius: 4px;
   }
   .fk-card {
     padding: 0px;
@@ -120,13 +124,13 @@ header{
     font-size: 14px;
     color: rgb(56, 142, 60);
   }
-.fk-molc-table{
+.fk-molc-card{
     display: table;
     border-color: rgb(128, 128,128);
     font-size: 12px;
-    width: 356px;
+    width: 360px;
 }
-.fk-molc-table__margin{
+.fk-molc-card__margin{
   margin-left: 8.5px;
   margin-right: 9.5px;
 }
